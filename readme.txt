@@ -4,13 +4,17 @@
 
 ** TARGET **
 
-The demo runs on an STM32F4DISCOVERY board + DP83848 ETHERNET PHY. Wires 
-connections described in board.h file. This demo use Chibios 2.5.0 from git 
+The demo runs on an STM32F4DISCOVERY board + DP83848 ETHERNET PHY. Wires
+connections described in board.h file. This demo use Chibios 2.5.0 from git
 repository.
 
 ** The Demo **
 
+<<<<<<< Updated upstream
 The demo currently flashes a LED using a thread and implements UDP-TCP echo server demonstration for STM32F4x7 devices on port 8000. The board IP address is "192.168.0.136". 
+=======
+The demo currently flashes a LED using a thread and implements UDP-TCP echo server demonstration for STM32F4x7 devices on port 8000. The board IP address is "192.168.0.136".
+>>>>>>> Stashed changes
 You should change your network IPv4 parameters as defined in lwipthread.h such :
 
 Address: 192.168.0.10 (or any other ip that is free)
@@ -36,3 +40,6 @@ with ChibiOS/RT, you can find the whole library on the ST web site:
 
 Demo was provided by Navid Zandi based on the lwip tcp/ip stack demonstration for stm32f4x7 microcontrollers and with help from Nomados http-server port
 https://github.com/Nomados/STM32F4Discovery-ethernet-PHY-DP83848-demo-ChibiOS
+
+This version uses the ChibiOS version in the ch folder coming with the code. You can check the version 2
+https://github.com/nhzandi/EchoServer-ChibiOS-v2 which uses a newer ChibiOS version 16.1.0
