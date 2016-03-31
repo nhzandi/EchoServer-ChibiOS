@@ -10,7 +10,14 @@ repository.
 
 ** The Demo **
 
-The demo currently flashes a LED using a thread and implements UDP-TCP echo server demonstration for STM32F4x7 devices on port 8000. The board IP address is "192.168.0.136". Echo server is a port of ST appnote from FreeRTOS to ChibiOS.
+The demo currently flashes a LED using a thread and implements UDP-TCP echo server demonstration for STM32F4x7 devices on port 8000. The board IP address is "192.168.0.136". 
+You should change your network IPv4 parameters as defined in lwipthread.h such :
+
+Address: 192.168.0.10 (or any other ip that is free)
+Netmask: 255.255.255.0
+Gateway: 192.168.0.1
+
+Echo server is a port of ST appnote from FreeRTOS to ChibiOS.
 The button activates the ChibiOS/RT test suite, output on SD3.
 
 ** Build Procedure **
